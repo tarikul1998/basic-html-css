@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+#hero {
+  border: 5px solid green;
+  height: 735px;
+  width: 80%;
+  /* 180deg er jaigai o korle niche theke shadow ashbe */
+  background: linear-gradient(
+      0deg,
+      rgb(16, 16, 16) -19.5%,
+      rgba(16, 16, 16, 0) 100%
+    ),
+    url("../assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-content {
+  border: 2px solid red;
+  width: 818px;
+  /* margin: 0 auto; d-flex korle no need margin here*/
+  /* margin diye gap ante pari individualy = no d-flex use */
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#hero .hero-content p {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+#hero .hero-content h1 {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+#hero .hero-content h1 .desc {
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+#hero .hero-content .btn {
+  padding: 14px 18px 14px 18px;
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 8px;
+  background: rgb(82, 195, 3);
+  border: none;
+}
+#hero .hero-content .btn-container {
+  text-align: center;
+}
