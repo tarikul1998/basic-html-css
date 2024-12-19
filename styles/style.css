@@ -6,11 +6,12 @@
   font-family: "Work Sans", sans-serif;
 }
 
+/* Hero Section */
 #hero {
   border: 5px solid green;
   height: 735px;
   width: 80%;
-  /* 180deg er jaigai o korle niche theke shadow ashbe */
+  margin: 100px auto; /* Centers the hero section */
   background: linear-gradient(
       0deg,
       rgb(16, 16, 16) -19.5%,
@@ -28,59 +29,107 @@
 .hero-content {
   border: 2px solid red;
   width: 818px;
-  /* margin: 0 auto; d-flex korle no need margin here*/
-  /* margin diye gap ante pari individualy = no d-flex use */
-  
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 
 #hero .hero-content p {
   color: rgb(255, 255, 255);
-  font-family: Work Sans;
   font-size: 20px;
   font-weight: 600;
   line-height: 38px;
-  letter-spacing: 0%;
-  text-align: center;
   opacity: 0.8;
 }
 
 #hero .hero-content h1 {
   color: rgb(255, 255, 255);
-  font-family: Work Sans;
   font-size: 36px;
   font-weight: 700;
   line-height: 50px;
-  letter-spacing: 0%;
-  text-align: center;
 }
 
-#hero .hero-content h1 .desc {
+#hero .hero-content .desc {
   color: rgb(255, 255, 255);
-  font-family: Work Sans;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0%;
-  text-align: center;
+  line-height: 22px;
   opacity: 0.7;
 }
 
-#hero .hero-content .btn {
-  padding: 14px 18px 14px 18px;
+#hero .btn-container {
+  text-align: center;
+}
+
+#hero .btn {
+  padding: 14px 18px;
   color: rgb(255, 255, 255);
-  font-family: Work Sans;
   font-size: 12px;
   font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0%;
-  text-align: center;
   border-radius: 8px;
   background: rgb(82, 195, 3);
   border: none;
+  cursor: pointer;
 }
-#hero .hero-content .btn-container {
+
+/* Card Section */
+#card-box {
+  border: 2px solid maroon;
+  width: 1056px;
+  margin: 100px auto;
+}
+
+#card-box p {
+  color: rgb(16, 16, 16);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.6;
   text-align: center;
+}
+
+.info h1 {
+  color: rgb(16, 16, 16);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card .image-box {
+  width: 250px;
+}
+
+.card .image-box img {
+  width: 100%;
+}
+
+.spanDiv {
+  background: rgba(82, 195, 3, 0.15);
+  padding: 10px;
+}
+
+.btn2 {
+  border-radius: 8px;
+  background: rgb(82, 195, 3);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
